@@ -27,10 +27,10 @@ def sql_error():
 # checks if sql is connectable 
 try:
     db = mysql.connector.connect(
-    host="54.36.106.157",
-    user="mrooodpd_ben",
-    passwd="Kaloo2015",
-    database="mrooodpd_users"
+    host="",
+    user="",
+    passwd="",
+    database=""
     )
     cursor = db.cursor()        
     cursor.execute("SELECT VERSION()")
@@ -75,10 +75,10 @@ def server_program():
         email = server_program.userinfo[0]
         if(re.match("^[a-zA-Z0-9_+&*-]+(?:\\.[a-zA-Z0-9_+&*-]+)*@(?:[a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,7}$", email) != None):
             mydb = mysql.connector.connect(
-                host="54.36.106.157",
-                user="mrooodpd_ben",
-                passwd="Kaloo2015",
-                database="mrooodpd_users"
+                host="",
+                user="",
+                passwd="",
+                database=""
             )
 
             mycursor = mydb.cursor()
