@@ -26,10 +26,10 @@ def sql_error():
 # checks if sql is connectable 
 try:
     db = mysql.connector.connect(
-    host="54.36.106.157",
-    user="mrooodpd_ben",
-    passwd="Kaloo2015",
-    database="mrooodpd_users"
+    host="",
+    user="",
+    passwd="",
+    database=""
     )
     cursor = db.cursor()        
     cursor.execute("SELECT VERSION()")
@@ -79,10 +79,10 @@ def server_program():
         Password=server_program.userinfo[1]
         Username=server_program.userinfo[2]             
         mydb = mysql.connector.connect(
-        host="54.36.106.157",
-        user="mrooodpd_ben",
-        passwd="Kaloo2015",
-        database="mrooodpd_users"
+        host="",
+        user="",
+        passwd="",
+        database=""
         )
 
         mycursor = mydb.cursor()
